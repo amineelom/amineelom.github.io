@@ -540,13 +540,6 @@ Full responses available in attached data.
       // setupTypeformIntegration();
       // embedTypeform();
 
-      // FAQ toggles
-      document.querySelectorAll('.faq-item').forEach(item => {
-        item.querySelector('.faq-question').onclick = function() {
-          item.classList.toggle('active');
-        };
-      });
-
       // Social sharing
       document.querySelectorAll('.share-btn').forEach(btn => {
         btn.onclick = function() {
@@ -565,6 +558,18 @@ Full responses available in attached data.
       });
     })();
 });
+
+// --- Always enable FAQ toggles ---
+// document.addEventListener('DOMContentLoaded', function() {
+//   document.querySelectorAll('.faq-item').forEach(item => {
+//     const question = item.querySelector('.faq-question');
+//     if (question) {
+//       question.onclick = function() {
+//         item.classList.toggle('active');
+//       };
+//     }
+//   });
+// });
 
 // Navigation functionality
 function initNavigation() {
